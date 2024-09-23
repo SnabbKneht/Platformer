@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1xpd6wtg71jw"]
+[gd_scene load_steps=8 format=3 uid="uid://d1xpd6wtg71jw"]
 
 [ext_resource type="Texture2D" uid="uid://cklj4mboy6m5q" path="res://sprites/characters.png" id="1_4j1av"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_hanpt"]
+[ext_resource type="Script" path="res://scripts/inventory.gd" id="3_41x0r"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0i88b"]
 height = 24.0
@@ -53,3 +54,6 @@ shape = SubResource("CapsuleShape2D_0i88b")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_l7bej")
 animation = &"idle"
+
+[node name="Inventory" type="Node" parent="."]
+script = ExtResource("3_41x0r")
