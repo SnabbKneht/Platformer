@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://c30s5ix3crs3i"]
+
+[ext_resource type="PackedScene" uid="uid://kpuvdjo5xh7v" path="res://scenes/level.tscn" id="1_2j31d"]
+[ext_resource type="PackedScene" uid="uid://d1xpd6wtg71jw" path="res://scenes/player.tscn" id="2_hw2wr"]
+[ext_resource type="PackedScene" uid="uid://cti26sqf7u5b7" path="res://scenes/coin.tscn" id="3_4mgua"]
+
+[node name="Main" type="Node"]
+
+[node name="Level" parent="." instance=ExtResource("1_2j31d")]
+position = Vector2(0, 522)
+
+[node name="Player" parent="." instance=ExtResource("2_hw2wr")]
+position = Vector2(598, 289)
+
+[node name="Coin" parent="." instance=ExtResource("3_4mgua")]
+position = Vector2(901, 476)
