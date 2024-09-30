@@ -10,4 +10,4 @@ func _ready() -> void:
 
 func add_coin():
 	coins += 1
-	print('Coin added')
+	EventManager.coin_picked.emit()
